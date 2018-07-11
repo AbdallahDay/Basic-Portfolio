@@ -56,6 +56,7 @@ header {
     left: 0;
     width: 100%;
     height: 100px;
+    z-index: 999;
 }
 
 #header-content-container {
@@ -74,6 +75,22 @@ header {
     color: #ffffff;
     line-height: 98px;
     margin: 0;
+}
+
+a#logo:link,
+a#logo:visited,
+a#logo:hover,
+a#logo:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a#logo:hover {
+    background-color: #6ebbb7;
+}
+
+a#logo:active {
+    background-color: #3b8884;
 }
 
 #main-nav {
@@ -130,13 +147,86 @@ img#profile-pic {
     margin: 0.5rem 20px 0.5rem 0;
 }
 
-table#portfolio-items-table {
-    width: 100%;
+/* Portfolio page */
+
+.portfolio-item {
+    width: 280px;
+    height: 210px;
+    float: left;
+    position: relative;
+    margin: 20px 30px 30px 0;
 }
 
-img.portfolio-item-image {
-    width: 200px;
-    height: 150px;
+/* a.portfolio-item:link,
+a.portfolio-item:visited,
+a.portfolio-item:hover,
+a.portfolio-item:active {
+    color: #ffffff;
+    text-decoration: none;
+} */
+
+a.portfolio-item:hover .portfolio-item-text {
+    background-color: #6ebbb7;
+}
+
+a.portfolio-item:active .portfolio-item-text {
+    background-color: #3b8884;
+}
+
+.portfolio-item-image {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-item-text {
+    width: 100%;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 10px 5px;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* Contact page */
+
+.contact-label {
+    float: left;
+    clear: both;
+}
+
+.contact-input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+}
+
+textarea#message {
+    height: 200px;
+}
+
+#submit-button {
+    float: left;
+    padding: 5px 20px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+a#submit-button:link,
+a#submit-button:visited,
+a#submit-button:hover,
+a#submit-button:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a#submit-button:hover {
+    background-color: #6ebbb7;
+}
+
+a#submit-button:active {
+    background-color: #3b8884;
 }
 
 /*** FOOTER ***/
